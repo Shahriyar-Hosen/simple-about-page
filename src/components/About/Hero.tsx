@@ -11,15 +11,19 @@ export const Hero: FC = () => {
       <Text className="text-xs lg:text-xs text-white">{des}</Text>
     </div>
   );
+
   return (
-    <BackgroundImg img={heroBg}>
+    <BackgroundImg img={heroBg} overflow>
       <Container className="py-5 flex justify-center items-center flex-col">
         <Text className="text-white text-center py-5 pt-10">
           Fotografiraj.hr - profesionalni fotografi na jednom mjestu
         </Text>
-        <Title variant="H1" className="py-5 text-white w-full max-w-2xl">
-          Najveća platforma za prezentaciju{" "}
-          <span className="font-serif">fotografa</span> u Hrvatskoj.
+        <Title
+          variant="H1"
+          className="py-5 text-white w-full max-w-[600px] lg:leading-[70px]"
+        >
+          Najveća platforma za prezentaciju
+          <span className="font-serif"> fotografa</span> u Hrvatskoj.
         </Title>
 
         <Button className="my-5">Pridruži se</Button>
@@ -28,7 +32,7 @@ export const Hero: FC = () => {
           <Card
             title="Naša misija"
             des="Učiniti pretragu fotografa u Hrvatskoj brzom, jednostavnom i
-        učinkovitom, a fotografe prezentirati široj klijenteli."
+    učinkovitom, a fotografe prezentirati široj klijenteli."
           />
           <Card
             title="Naša vizija"
