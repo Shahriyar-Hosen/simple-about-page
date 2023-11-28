@@ -1,3 +1,4 @@
 "use client";
 
-export * from "./hero";
+export * from "./About";
+export * from "./Hero";

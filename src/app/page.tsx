@@ -1,21 +1,11 @@
-import { heroBg } from "@/assets";
-import { Hero } from "@/components";
-import {
-  BackgroundImg,
-  Button,
-  Container,
-  Text,
-  Title,
-} from "@/components/common";
-import { FC } from "react";
+import { About, Hero } from "@/components";
 
 const App = () => {
   return (
     <main>
       <Hero />
-
-      {/* Hero */}
-      {/* about section  */}
+      <About />
+      <div className="mt-10"></div>
       {/* feathers */}
       {/* founder */}
       {/* footer  */}
