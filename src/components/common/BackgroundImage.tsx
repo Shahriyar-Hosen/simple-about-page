@@ -1,9 +1,9 @@
 "use client";
 
 import { IBackgroundImage } from "@/interface";
+import { cn } from "@/utils";
 import Image from "next/image";
 import { FC } from "react";
-import { twMerge } from "tailwind-merge";
 
 export const BackgroundImg: FC<IBackgroundImage> = ({
   children,
@@ -14,15 +14,15 @@ export const BackgroundImg: FC<IBackgroundImage> = ({
   overlay,
 }) => (
   <section
-    className={twMerge(
-      `relative w-full ${overflow && "overflow-hidden"}`,
+    className={cn(
+      `relative w-full ${overflow && "overflow-hidden bg-black"}`,
       className
     )}
   >
-    <div className={`absolute w-full inset-0`}>
+    <div className={`absolute w-full inset-0 pt top-56`}>
       <Image
         src={img}
-        className={`w-full object-cover ${
+        className={`w-full object-cover hidden sm:block ${
           overflow && "min-w-[500px] min-h-[500px]"
         }`}
         alt="background image"

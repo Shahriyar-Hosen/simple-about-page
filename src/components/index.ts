@@ -1,1 +1,3 @@
-export * from "./";
+"use client";
+
+export * from "./About";

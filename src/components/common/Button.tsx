@@ -14,8 +14,7 @@ export const Button: FC<IButton> = ({
   variant = "primary",
 }) => {
   const btnVariant =
-    (variant === "primary" &&
-      "bg-transparent hover:bg-secondary px-7 py-3 border border-white rounded-md") ||
+    (variant === "primary" && "") ||
     (variant === "secondary" &&
       "px-3 py-1.5 bg-accent hover:bg-primary rounded") ||
     (variant === "accent" &&
@@ -27,7 +26,9 @@ export const Button: FC<IButton> = ({
       onClick={onClick}
       disabled={disabled}
       className={twMerge(
-        `text-sm text-white text-center font-sora font-semibold transition-all delay-75 ${btnVariant}`,
+        `text-sm text-white text-center font-sora font-semibold transition-all delay-75 ${btnVariant}
+        bg-[#1d5dd7] hover:bg-[#1d4fd7] px-10 py-2 white rounded-md
+        `,
         className
       )}
     >
