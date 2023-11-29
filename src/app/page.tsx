@@ -1,16 +1,16 @@
-import { About, Feathers, Hero } from "@/components";
+import { Author, Feather, Footer, Hero, Info } from "@/components";
+import Box from "@mui/material/Box";
 
-const App = () => {
+const Home = () => {
   return (
-    <main>
+    <Box component="section">
       <Hero />
-      <About />
-      <Feathers />
-      <div className="mt-10"></div>
-      {/* founder */}
-      {/* footer  */}
-    </main>
+      <Info />
+      <Feather />
+      <Author />
+      <Footer />
+    </Box>
   );
 };
 
-export default App;
+export default Home;
