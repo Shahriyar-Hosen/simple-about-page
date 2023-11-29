@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FC } from "react";
 
 export const Author: FC = () => (
-  <Box boxShadow="0px 2px 6px rgba(0, 0, 0, 0.1)" paddingBottom="1px">
+  <Box boxShadow="0px 2px 8px rgba(0, 0, 0, 0.1)" paddingY={1}>
     <Box maxWidth="1280px" margin="0 auto">
       <Box
         display="flex"

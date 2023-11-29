@@ -10,7 +10,7 @@ export const Info: FC = () => (
     borderBottom={1}
     borderColor="#f8faff"
     boxShadow="0px 2px 6px rgba(0, 0, 0, 0.1)"
-    p={{ xs: 3, md: 5 }}
+    padding={{ xs: 3, md: 5 }}
   >
     <Typography
       variant="h1"

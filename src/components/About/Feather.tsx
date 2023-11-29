@@ -127,7 +127,7 @@ const FeatherCard: FC<IFeatherCard> = ({
 );
 
 export const Feather: FC = () => (
-  <Box boxShadow="0px 2px 6px rgba(0, 0, 0, 0.1)" paddingBottom="1px">
+  <Box>
     <Box maxWidth="1280px" margin="0 auto">
       <FeatherCard
         img={mockup}
