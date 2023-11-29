@@ -127,53 +127,55 @@ const FeatherCard: FC<IFeatherCard> = ({
 );
 
 export const Feather: FC = () => (
-  <Box>
-    <FeatherCard
-      img={mockup}
-      label="Za Klijente"
-      title="Pronadite idealnog fotografa za svoje potrebe"
-      des="Brz i jednostavan pronalazak idealnog fotografa uz pomoc nasih alata
+  <Box boxShadow="0px 2px 6px rgba(0, 0, 0, 0.1)" paddingBottom="1px">
+    <Box maxWidth="1280px" margin="0 auto">
+      <FeatherCard
+        img={mockup}
+        label="Za Klijente"
+        title="Pronadite idealnog fotografa za svoje potrebe"
+        des="Brz i jednostavan pronalazak idealnog fotografa uz pomoc nasih alata
       za pretragu."
-      items={[
-        {
-          icon: filter,
-          label: `Filteri po kategorijama (Vjencanja,
+        items={[
+          {
+            icon: filter,
+            label: `Filteri po kategorijama (Vjencanja,
         Nekretnine, Potreti...)`,
-        },
-        {
-          icon: cards,
-          label: `Dodatna pretraga po uslugama (Dron,
+          },
+          {
+            icon: cards,
+            label: `Dodatna pretraga po uslugama (Dron,
                 Video, Print...)`,
-        },
-        {
-          icon: location,
-          label: `Dostupnost fotografa po lokaciji
+          },
+          {
+            icon: location,
+            label: `Dostupnost fotografa po lokaciji
               fotografiranja`,
-        },
-      ]}
-      btnText="Pronadi folografe"
-    />
-    <FeatherCard
-      img={book}
-      label="Za folografe"
-      title="Pokazi se klijentima iz raznih industrija"
-      des="Regqistriraj se i prezentiraj svoje najbolje fotografije sasvim novoj klijenteli."
-      items={[
-        {
-          icon: account,
-          label: `lzradi profil fotografa potpuno besplatno`,
-        },
-        {
-          icon: addPhoto,
-          label: `Istakni svoje najbolje fotografije`,
-        },
-        {
-          icon: smileFace,
-          label: `Zaprimaj direktne upite novih klijenata`,
-        },
-      ]}
-      btnText="Pronadi folografe"
-      reverse
-    />
+          },
+        ]}
+        btnText="Pronadi folografe"
+      />
+      <FeatherCard
+        img={book}
+        label="Za folografe"
+        title="Pokazi se klijentima iz raznih industrija"
+        des="Regqistriraj se i prezentiraj svoje najbolje fotografije sasvim novoj klijenteli."
+        items={[
+          {
+            icon: account,
+            label: `lzradi profil fotografa potpuno besplatno`,
+          },
+          {
+            icon: addPhoto,
+            label: `Istakni svoje najbolje fotografije`,
+          },
+          {
+            icon: smileFace,
+            label: `Zaprimaj direktne upite novih klijenata`,
+          },
+        ]}
+        btnText="Pronadi folografe"
+        reverse
+      />
+    </Box>
   </Box>
 );

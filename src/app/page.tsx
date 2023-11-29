@@ -1,4 +1,4 @@
-import { Feather, Hero, Info } from "@/components";
+import { Author, Feather, Hero, Info } from "@/components";
 import Box from "@mui/material/Box";
 
 const Home = () => {
@@ -7,8 +7,8 @@ const Home = () => {
       <Hero />
       <Info />
       <Feather />
+      <Author />
       <h1>Hello world</h1>
-      {/* Author */}
       {/* Footer */}
     </Box>
   );
