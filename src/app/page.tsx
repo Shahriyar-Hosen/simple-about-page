@@ -1,12 +1,12 @@
-import { About, Hero } from "@/components";
+import { About, Feathers, Hero } from "@/components";
 
 const App = () => {
   return (
     <main>
       <Hero />
       <About />
+      <Feathers />
       <div className="mt-10"></div>
-      {/* feathers */}
       {/* founder */}
       {/* footer  */}
     </main>
