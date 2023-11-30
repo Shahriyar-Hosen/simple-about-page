@@ -1,6 +1,6 @@
 "use client";
 
-import { author } from "@/assets";
+import { lvan, never } from "@/assets";
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import { FC } from "react";
@@ -14,13 +14,13 @@ export const Author: FC = () => (
         justifyContent="center"
         alignItems="center"
         marginX={{ xs: 3, md: 10 }}
-        marginY={{ xs: 10, md: 10 }}
+        marginY={{ xs: 5, md: 10 }}
       >
         <Grid
           container
           spacing={{ xs: 2, md: 5 }}
           justifyContent="center"
-          alignItems="center"
+          alignItems="start"
           flexDirection={{ xs: "row-reverse", md: "row" }}
         >
           <Grid
@@ -30,15 +30,50 @@ export const Author: FC = () => (
             lg={6}
             display={{ xs: "block", md: "none" }}
           >
-            <Box>
-              <Image
-                src={author}
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="start"
+              gap={{ xs: 2, md: 5 }}
+              maxWidth="100%"
+              flexWrap="wrap"
+              paddingTop={3}
+            >
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="flex-end"
+                gap={1}
+                marginTop={{ xl: "", md: "80px" }}
+              >
+                <Image
+                  src={lvan}
+                  alt=""
+                  style={{
+                    maxWidth: "180px",
+                    height: "auto",
+                  }}
+                />
+                <Typography>Ivan Bile</Typography>
+              </Box>
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="flex-end"
+                gap={1}
+              >
+                <Image
+                  src={never}
+                  alt=""
+                  style={{
+                    maxWidth: "180px",
+                    height: "auto",
+                  }}
+                />
+                <Typography>Never Kalar</Typography>
+              </Box>
             </Box>
           </Grid>
           <Grid item xs={12} md={6} lg={6} width="fit-content">
@@ -80,15 +115,49 @@ export const Author: FC = () => (
             lg={6}
             display={{ xs: "none", md: "block" }}
           >
-            <Box>
-              <Image
-                src={author}
-                alt=""
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="start"
+              gap={5}
+              maxWidth="100%"
+              paddingTop={3}
+            >
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="flex-end"
+                gap={1}
+                marginTop="80px"
+              >
+                <Image
+                  src={lvan}
+                  alt=""
+                  style={{
+                    maxWidth: "180px",
+                    height: "auto",
+                  }}
+                />
+                <Typography>Ivan Bile</Typography>
+              </Box>
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="flex-end"
+                gap={1}
+              >
+                <Image
+                  src={never}
+                  alt=""
+                  style={{
+                    maxWidth: "180px",
+                    height: "auto",
+                  }}
+                />
+                <Typography>Never Kalar</Typography>
+              </Box>
             </Box>
           </Grid>
         </Grid>

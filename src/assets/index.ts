@@ -9,6 +9,8 @@ import cards from "./img/cards.svg";
 import filter from "./img/filter.svg";
 import heroBg from "./img/hero-bg.png";
 import location from "./img/location.svg";
+import lvan from "./img/lvan-bile.png";
+import never from "./img/never-kalar.png";
 import smileFace from "./img/smile-face.svg";
 
 export {
@@ -20,6 +22,8 @@ export {
   filter,
   heroBg,
   location,
+  lvan,
   mockup,
+  never,
   smileFace,
 };
