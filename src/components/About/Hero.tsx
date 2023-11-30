@@ -8,19 +8,14 @@ import {
   CardContent,
   Grid,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import { FC } from "react";
 
 export const Hero: FC = () => {
-  const theme = useTheme();
-  const isMobileOrTablet = useMediaQuery(theme.breakpoints.down("sm"));
-
   const HeroCard: FC<IHeroCard> = ({ title, content }) => (
     <Card
       sx={{
-        backgroundColor: "#161616",
+        backgroundColor: "rgba(22, 22, 22, 0.8)",
         p: "24px",
         px: "16px",
         borderRadius: "30px",
@@ -55,7 +50,8 @@ export const Hero: FC = () => {
         alignItems: "center",
         justifyContent: "flex-start",
         px: "20px",
-        py: "30px",
+        py: "50px",
+        pt: "30px",
       }}
     >
       <Typography
@@ -70,10 +66,11 @@ export const Hero: FC = () => {
         variant="h1"
         sx={{
           color: "white",
-          maxWidth: "680px",
+          maxWidth: "690px",
           textAlign: "center",
         }}
-        fontSize={{ xs: 30, md: 70 }}
+        fontSize={{ xs: 30, md: 69 }}
+        fontWeight={600}
         paddingY={{ xs: 3, md: 4 }}
         paddingBottom={{ xs: 3, md: 5.5 }}
       >

@@ -9,7 +9,7 @@ export const Info: FC = () => (
     sx={{ backgroundColor: "#f8faff" }}
     borderBottom={1}
     borderColor="#f8faff"
-    boxShadow="0px 2px 6px rgba(0, 0, 0, 0.1)"
+    boxShadow="0px 1px 2px rgba(0, 0, 0, 0.1)"
     padding={{ xs: 3, md: 5 }}
   >
     <Typography
