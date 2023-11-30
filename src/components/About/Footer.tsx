@@ -11,7 +11,7 @@ export const Footer: FC = () => (
     borderColor="#f8faff"
     padding={{ xs: 3, md: 5 }}
     sx={{ backgroundColor: "#f8faff" }}
-    boxShadow="inset 0px 2px 6px rgba(0, 0, 0, 0.1)"
+    boxShadow="inset 0px 1px 2px rgba(0, 0, 0, 0.1)"
   >
     <Typography
       variant="h1"
