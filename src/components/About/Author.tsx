@@ -21,62 +21,17 @@ export const Author: FC = () => (
           spacing={{ xs: 2, md: 5 }}
           justifyContent="center"
           alignItems="start"
-          flexDirection={{ xs: "row-reverse", md: "row" }}
         >
           <Grid
             item
             xs={12}
             md={6}
             lg={6}
-            display={{ xs: "block", md: "none" }}
+            width="fit-content"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
           >
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="start"
-              gap={{ xs: 2, md: 5 }}
-              maxWidth="100%"
-              flexWrap="wrap"
-              paddingTop={3}
-            >
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                alignItems="flex-end"
-                gap={1}
-                marginTop={{ xl: "", md: "80px" }}
-              >
-                <Image
-                  src={lvan}
-                  alt=""
-                  style={{
-                    maxWidth: "180px",
-                    height: "auto",
-                  }}
-                />
-                <Typography>Ivan Bile</Typography>
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                justifyContent="center"
-                alignItems="flex-end"
-                gap={1}
-              >
-                <Image
-                  src={never}
-                  alt=""
-                  style={{
-                    maxWidth: "180px",
-                    height: "auto",
-                  }}
-                />
-                <Typography>Never Kalar</Typography>
-              </Box>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6} lg={6} width="fit-content">
             <Box>
               <Typography variant="h4" fontWeight={500}>
                 Upoznajte tim Fotografiraj.hr
@@ -113,12 +68,16 @@ export const Author: FC = () => (
             xs={12}
             md={6}
             lg={6}
-            display={{ xs: "none", md: "block" }}
+            width="fit-content"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
           >
             <Box
               display="flex"
               justifyContent="center"
               alignItems="start"
+              flexWrap="wrap"
               gap={5}
               maxWidth="100%"
               paddingTop={3}
@@ -129,7 +88,7 @@ export const Author: FC = () => (
                 justifyContent="center"
                 alignItems="flex-end"
                 gap={1}
-                marginTop="80px"
+                marginTop={{ md: "80px" }}
               >
                 <Image
                   src={lvan}

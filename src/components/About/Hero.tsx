@@ -42,7 +42,8 @@ export const Hero: FC = () => {
     <Box
       sx={{
         backgroundImage: 'url("/hero-bg.png")',
-        backgroundSize: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
         minHeight: "50vh",
         display: "flex",
@@ -56,7 +57,7 @@ export const Hero: FC = () => {
     >
       <Typography
         variant="body2"
-        sx={{ color: "white", fontWeight: 400, pt: "30px" }}
+        sx={{ color: "white", fontWeight: 400, pt: "20px" }}
         textAlign="center"
       >
         Fotografiraj.hr - profesionalni fotografi na jednom mjestu
@@ -69,7 +70,7 @@ export const Hero: FC = () => {
           maxWidth: "690px",
           textAlign: "center",
         }}
-        fontSize={{ xs: 30, md: 69 }}
+        fontSize={{ xs: 30, md: 65 }}
         fontWeight={600}
         paddingY={{ xs: 3, md: 4 }}
         paddingBottom={{ xs: 3, md: 5.5 }}
@@ -89,16 +90,36 @@ export const Hero: FC = () => {
         <Grid
           container
           spacing={{ xs: 5, md: 20 }}
+          width="100%"
+          display="flex"
           justifyContent="center"
           alignItems="center"
         >
-          <Grid item xs={12} md={6} lg={6} width="fit-content">
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={6}
+            width="fit-content"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
             <HeroCard
               title="Naša misija"
               content="Učiniti pretragu fotografa u Hrvatskoj brzom, jednostavnom i učinkovitom, a fotografe prezentirati široj klijenteli."
             />
           </Grid>
-          <Grid item xs={12} md={6} lg={6}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg={6}
+            width="fit-content"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
             <HeroCard
               title="Naša vizija"
               content="Okupiti sve kvalitetne profesionalne fotografe u Hrvatskoj te postati sveobuhvatna baza i sinonim za pretragu fotografa."
