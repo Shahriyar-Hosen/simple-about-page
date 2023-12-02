@@ -48,7 +48,7 @@ const FeatherCard: FC<IFeatherCard> = ({
       alignItems="center"
       flexDirection={{ xs: "row-reverse", md: "row" }}
     >
-      <Grid
+      {/* <Grid
         item
         xs={12}
         md={6}
@@ -65,8 +65,17 @@ const FeatherCard: FC<IFeatherCard> = ({
             }}
           />
         </Box>
-      </Grid>
-      <Grid item xs={12} md={6} lg={6} width="fit-content">
+      </Grid> */}
+      <Grid
+        item
+        xs={12}
+        md={6}
+        lg={6}
+        width="fit-content"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Box>
           <Typography
             variant="body2"
@@ -108,20 +117,18 @@ const FeatherCard: FC<IFeatherCard> = ({
           </Button>
         </Box>
       </Grid>
-      {!reverse && (
-        <Grid item xs={12} md={6} lg={6} display={{ xs: "none", md: "block" }}>
-          <Box>
-            <Image
-              src={img}
-              alt=""
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
-          </Box>
-        </Grid>
-      )}
+      <Grid item xs={12} md={6} lg={6}>
+        <Box>
+          <Image
+            src={img}
+            alt=""
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
+        </Box>
+      </Grid>
     </Grid>
   </Box>
 );
